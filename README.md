@@ -16,7 +16,7 @@ Then click on install.
 
 ## Setup / Configuration
 ### Get an API Key
-**Please read the full paragraph before creating an account!**
+**Please read the full paragraph before creating an account!**  
 To get an API Key you need to create an account. You can do this [here](https://speedrun.tandashi.de/chat/register).
 Once you created the account you will be redirect to a page displaying your username and your API Key. Store this API Key somewhere safe because you will **not** be able to view it once more. This will change in future updates. Now you can configure the script.
 
