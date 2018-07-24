@@ -25,7 +25,7 @@ Once you got your API Key you need to open the script. This can be done by click
 ```javascript
 const API_KEY = "";
 ```
-Paste your API Key between the two quotationmarks. Now your done with the configuration.  
+Paste your API Key between the two quotationmarks. Now safe the file with `CTRL + S` and your done with the configuration.  
 If you should encounter any problems read the FAQ or contact me on Discord (Tandashi#5185).
 
 
