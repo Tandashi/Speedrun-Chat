@@ -31,4 +31,4 @@ If you should encounter any problems read the FAQ or contact me on Discord (Tand
 
 ## FAQ
 Q: Why is there a popup when I click the message symbol for the first time?  
-A: This is because by default it is not allowed to pull data from another website. Just press allow permanent to allow the script to pull messages from the API.
+A: This is because by default it is not allowed to pull data from another website. Just press `always allow domain` to allow the script to pull messages from the API.
