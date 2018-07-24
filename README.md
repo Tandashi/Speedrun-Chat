@@ -22,13 +22,13 @@ Once you created the account you will be redirect to a page displaying your user
 
 ### Configure script
 Once you got your API Key you need to open the script. This can be done by clicking the Tampermonkey extension symbol on the top right corner (this could also be located somewhere else depending on your browser). In the dropdown menu select "Dashboard". Now you click on the "Speedrun.com Chat" script. Scroll down a bit till you see "// ==Config==". In this section somewhere should be this line:
-'''
+```javascript
 const API_KEY = "";
-'''
+```
 Paste your API Key between the two quotationmarks. Now your done with the configuration.  
-If you should encounter any problems read the FAQ or contact me on Discord (Tandashi#).
+If you should encounter any problems read the FAQ or contact me on Discord (Tandashi#5185).
 
 
 ## FAQ
-Q: Why is there a popup when I click the message symbol for the first time?
+Q: Why is there a popup when I click the message symbol for the first time?  
 A: This is because by default it is not allowed to pull data from another website. Just press allow permanent to allow the script to pull messages from the API.
