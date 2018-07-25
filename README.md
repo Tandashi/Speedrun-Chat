@@ -22,13 +22,15 @@ To get an API Key you need to create an account. You can do this [here](https://
 Once you created the account you will be redirect to a page displaying your username and your API Key. Store this API Key somewhere safe because you will **not** be able to view it once more. This will change in future updates. Now you can configure the script.
 
 ### Configure script
-Once you got your API Key you need to configure the script.
-
-
-
-Paste your API Key into the textbox. Now click save and your done with the configuration.  
+Once you got your API Key you need to configure the script. To configure the script just go to speedrun.com and click the message icon. A textbox asking you to input your API Key will appear. Paste your API Key into the textbox. Now click save and your done with the configuration.  
 If you should encounter any problems read the FAQ or contact me on Discord (Tandashi#5185).
 
+### Further Configuration
+To open the settings menu just click the settings icon in the top right corner. The following settings can be ajusted:
+
+|Name|Description|Version|
+|-|-|-|
+|Reset API Key|Click to reset the stored API Key|v0.1.4+|
 
 ## FAQ
 Q: Why is there a popup when I click the message symbol for the first time?  
