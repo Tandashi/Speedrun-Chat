@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Speedrun.com Chat
 // @namespace    https://tandashi.de
-// @version      0.1.5
+// @version      0.1.6
 // @description  Implement chat feature to speedrun.com
 // @author       Tandashi
 
@@ -310,6 +310,7 @@ function inflate_message(message) {
   message_area.textContent = message.message;
   message_area.style.color = "black";
   message_area.style.marginBottom = "0";
+  message_area.style.whiteSpace = "pre-wrap";
   content_entry.appendChild(message_area);
 
   list_entry.appendChild(content_entry);
