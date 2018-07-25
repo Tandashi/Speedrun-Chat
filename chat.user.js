@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Speedrun.com Chat
 // @namespace    https://tandashi.de
-// @version      0.1.4
+// @version      0.1.5
 // @description  Implement chat feature to speedrun.com
 // @author       Tandashi
 
@@ -50,12 +50,9 @@ const ERROR_MESSAGES = {
 }
 // ==/Constants==
 
-// ==Config==
-var API_KEY = GM_getValue("API_KEY", null);
-// ==/Config==
-
 var navbar, message_tab, message_menu;
 var messages;
+var API_KEY = GM_getValue("API_KEY", null);
 
 // Overwrite onload
 window.onload = () => {
@@ -176,6 +173,7 @@ function inflate_config() {
   message_menu.appendChild(create_divider());
 
   const list_entry = document.createElement("li");
+  message_menu.appendChild(list_entry);
 
   const reset_key_button = create_button("Reset API Key", () => {
     GM_deleteValue("API_KEY");
@@ -183,12 +181,13 @@ function inflate_config() {
   }, "none");
   list_entry.appendChild(reset_key_button);
 
+  // Add a divider
+  message_menu.appendChild(create_divider());
+
   const back_button = create_button("Back", () => {
     inflate_messages();
   }, "none");
-  list_entry.appendChild(back_button);
-
-  message_menu.appendChild(list_entry);
+  message_menu.appendChild(back_button);
 }
 
 function inflate_api_config(callback) {
@@ -401,7 +400,7 @@ function add_message_entry(message, disabled) {
   list_entry.style.marginTop = "3%";
 
   const title_entry = document.createElement("a");
-  if(message.title.length > 25) {
+  if(message.title.length > 25 && disabled != true) {
     title_entry.textContent = message.title.substr(0, 25) + " ...";
   }
   else{
@@ -414,15 +413,6 @@ function add_message_entry(message, disabled) {
   title_entry.style.padding = "0 3% 0 5%";
   title_entry.style.background = "#e5e5e5";
 
-  // Create hover effect
-  title_entry.addEventListener('mouseleave', () => {
-    title_entry.style.background = "#e5e5e5";
-  });
-  // Create hover effect
-  title_entry.addEventListener('mouseenter', () => {
-    title_entry.style.background = "#d6d6d6";
-  });
-
   list_entry.appendChild(title_entry);
 
   if(disabled != true){
@@ -430,6 +420,15 @@ function add_message_entry(message, disabled) {
       if(event.target == title_entry){
         inflate_message(message);
       }
+    });
+
+    // Create hover effect
+    title_entry.addEventListener('mouseleave', () => {
+      title_entry.style.background = "#e5e5e5";
+    });
+    // Create hover effect
+    title_entry.addEventListener('mouseenter', () => {
+      title_entry.style.background = "#d6d6d6";
     });
 
     const delete_entry = create_button("", () => {
@@ -471,6 +470,7 @@ function add_message_entry(message, disabled) {
   else {
     title_entry.style.width = "100%";
     title_entry.style.color = "grey";
+    title_entry.style.background = "transparent";
   }
 
   message_menu.appendChild(list_entry);
