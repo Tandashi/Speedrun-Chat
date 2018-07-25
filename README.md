@@ -1,4 +1,5 @@
 # Speedrun-Chat
+This script allows you to write messages on speedrun.com
 
 ## Installation
 ### Requirements
@@ -21,11 +22,11 @@ To get an API Key you need to create an account. You can do this [here](https://
 Once you created the account you will be redirect to a page displaying your username and your API Key. Store this API Key somewhere safe because you will **not** be able to view it once more. This will change in future updates. Now you can configure the script.
 
 ### Configure script
-Once you got your API Key you need to open the script. This can be done by clicking the Tampermonkey extension symbol on the top right corner (this could also be located somewhere else depending on your browser). In the dropdown menu select "Dashboard". Now you click on the "Speedrun.com Chat" script. Scroll down a bit till you see "// ==Config==". In this section somewhere should be this line:
-```javascript
-const API_KEY = "";
-```
-Paste your API Key between the two quotationmarks. Now safe the file with `CTRL + S` and your done with the configuration.  
+Once you got your API Key you need to configure the script.
+
+
+
+Paste your API Key into the textbox. Now click save and your done with the configuration.  
 If you should encounter any problems read the FAQ or contact me on Discord (Tandashi#5185).
 
 
