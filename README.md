@@ -1,6 +1,8 @@
 # Speedrun-Chat
 This script allows you to write messages on speedrun.com
 
+# **NOT WORKING ANYMORE**
+
 ## Installation
 ### Requirements
 For this to work you need the Tempermonkey Extension for your Browser.
